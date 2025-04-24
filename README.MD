@@ -1,26 +1,34 @@
+# 🌌 **ChaosGraph v2.0**  
+<img src="./docs/images/chaosgraph-logo.PNG" width="350" height="280" alt="ChaosGraph Logo">
 
-# <b> chaosgraph v2.0 </b>
-<br>
-<img src="./pic/chaosgraph-logo.PNG" width="350" height="280">
-<br>
+---
 
-# <b> Instroduction </b>
-This library contribute to make chart on AWT/Swing/SWT components.
-It can be used for AWT/Swing application and Eclipse SWT(Standard Widget Tookit) application also if you would try to build a service of RAP dashboard web application, This library will provide great UX experience and excellent interactive functionality to the service for users.  
+## 📖 **Introduction**  
+ChaosGraph is a library designed to create stunning and interactive charts on **AWT**, **Swing**, and **SWT** components.  
+It is perfect for building desktop applications, Eclipse-based tools, or even RAP dashboard web applications.  
+With ChaosGraph, you can deliver an exceptional user experience with interactive and visually appealing charts.
 
+---
 
-## <b> What do you make with this? </b>
-You could need to make chart based application on pure java GUI, Use this library. Also when you need to build dashboard on non-web-based java application, Just use this. Maybe when if you are working with Eclipse RCP to make analysis app or CRM, MIS, This library could successful choice for your project's goal as UX to users. This library's core is java. Nevertheless, if you use Eclipse RAP, you can make a chart on Web Browser and graphic widget by using this library.  
-To use this library, see wiki pages. see above menu.
+## 🎯 **What Can You Build with ChaosGraph?**  
+- **Pure Java GUI Applications**: Create chart-based applications using AWT/Swing.  
+- **Non-Web Dashboards**: Build dashboards for Java desktop applications.  
+- **Eclipse RCP Tools**: Develop analysis apps, CRM, or MIS tools with enhanced UX.  
+- **Web-Based Charts**: Use Eclipse RAP to render charts in web browsers.  
 
+For detailed usage, check out the **Wiki** section above.
 
-## Current library download
-Prefer Release menu of right side, Current version is 2.0.0 - Oct 26, 2020
+---
 
- 
-## Maven dependency
+## 📥 **Current Library Download**  
+The latest version is **v2.0.0** (October 26, 2020).  
+Download it from the **Releases** section on the right-hand side of this repository.
+
+---
+
+## 📦 **Maven Dependency**  
+Add the following to your `pom.xml`:  
 ```xml
-<!-- https://mvnrepository.com/artifact/io.github.9ins/chaosgraph -->
 <dependency>
     <groupId>io.github.9ins</groupId>
     <artifactId>chaosgraph</artifactId>
@@ -28,107 +36,119 @@ Prefer Release menu of right side, Current version is 2.0.0 - Oct 26, 2020
 </dependency>
 ```
 
- 
-## Gradle dependency
+---
+
+## 🛠️ **Gradle Dependency**  
+Add this to your `build.gradle`:  
 ```groovy
-// https://mvnrepository.com/artifact/io.github.9ins/chaosgraph
 implementation group: 'io.github.9ins', name: 'chaosgraph', version: '2.0.0'
 ```
 
+---
 
-## <b>What is changed and improved?</b>
-There is 5 type of chart be supported in this v2.0.0 version.  
-Area/Bar/BarRatio/Circle/line chart is currently supported for public user.
-This version of the artifacts is quit changed then old version 1.x that was not suppoted interactive event, just only show chart shapes and handling mutil-dimension array to easily cause error.  
-Currently 2.0.0 version is providing more object-oriented, more interactive and more good-looked graphical methods and functions.
+## 🚀 **What's New and Improved in v2.0.0?**  
 
+### ✨ **New Features**  
+- **Bar Ratio Graph**: A new chart type for ratio-based visualizations.  
+- **SWT Support**: Native widget rendering for SWT/Eclipse applications and RAP web apps.  
+- **Interactive Popups**: Display data values in popups when selecting chart elements.  
+- **Dynamic Resizing**: Resize charts and their elements proportionally using the mouse wheel.  
+- **Event Listeners**: Add custom interactivity to charts.  
+- **GraphPanel & GraphCanvas**: Dedicated components for AWT/Swing and SWT, respectively.  
 
-## <b> Specification of additionals and improved</b>
-### <b> Additional functionality </b>
-* Adding BarRatioGraph  
-* SWT(Native Widget) rendering object is provided now in constrast old version. therefore the current version can be used to SWT, Eclipse appplications and RAP web applications.  
-* To add function that showing popup windows in chart if When graph be selected by mouse pointer.  
-* adding function that a graph be selected when if user select the label of chart element on label placed.
-* Whenever user click mouse right or left button, to toggle chart element to circulate clockwise or counter-clokwise
-* To spin mouse wheel, to resize chart
-* Because chart(Graph) object can be added event listener, Chart engineer can develop for more interactive service to users.
-* Adding chart and label border effect. e.g. Showing line or dot style, transpart contrast background on label.
-* Adding GraphPanel class that a chart would be drawn in AWT/Swing area.
-* Adding GraphCanvas class that a chart would be drawn in SWT/Eclipse area.
-### <b> Improved functionality </b>
-* Improving that the chart's abstractness and object-oriented concept is to be more resonable and more efficent.
-* To make chart's graphical effiect more beautiful.
-* When the chart's size to be resize, To make chart's inner element to resize at same ratio.
-* Improving chart drawing/Rendering structure.
+### 🔧 **Improvements**  
+- Enhanced object-oriented design for better usability and maintainability.  
+- Improved graphical effects for a more polished appearance.  
+- Optimized rendering structure for smoother performance.  
+- Resizable chart elements to maintain proportionality.  
 
+---
 
-## <b>Structure of chart objects</b>
-![UMLDiagram1](./pic/UMLDiagram1.PNG)
+## 🧩 **Chart Object Structure**  
+![UML Diagram](./docs/images/UMLDiagram1.PNG)
 
+---
 
-## <b>Example snippet</b>
-This project contains 3 example of the library.  
+## 💻 **Example Snippets**  
 
+### **AWTGraphSimple1.java**  
+- **Description**: A chart viewer that allows users to select and render charts.  
+- **Features**: Export charts to various image formats (PNG, JPG, TIFF, BMP).  
+- **Location**: `src/main/java/org/chaostocosmos/chaosgraph/awt2d/AWTGraphSimple1.java`
 
-> ### AWTGraphSimple1.java
-> This example is chart viewer. 
-> To select the chart be wanted, then draw the chart on window.  
-> You can output chart image to file with specific image format. e.g. PNG, JPG, TIFF, BMP  
-> Location : [PROJECT-PATH]/src/main/java/org/chaostocosmos/chaosgraph/awt2d/AWTGraphSimple1.java  
+---
 
-<br>
+### **AWTGraphSimple2.java**  
+- **Description**: A JVM memory monitor that visualizes real-time memory usage with dynamic charts.  
+- **Features**: Populate objects to observe memory changes dynamically.  
+- **Location**: `src/main/java/org/chaostocosmos/chaosgraph/awt2d/AWTGraphSimple2.java`
 
-> ### AWTGraphSimple2.java
-> This example is JVM memory monitor.  This show that current memory useage of this application on real-time.  
-> You can see memory status with some chart types. Also as pushing 'populate object' button, you will see more dynamic progress of memory status.  
-> Location : [PROJECT-PATH]/src/main/java/org/chaostocosmos/chaosgraph/awt2d/AWTGraphSimple2.java  
+---
 
-<br>
+### **SWTGraphSimple.java**  
+- **Description**: A conversion of AWTGraphSimple1 for SWT applications.  
+- **Location**: `src/main/java/org/chaostocosmos/chaosgraph/swt2d/SWTGraphSimple.java`
 
-> ### SWTGraphSimple.java
-> This example is converting SWT version of AWTGraphSimple1 above.  
-> Location : [PROJECT-PATH]/src/main/java/org/chaostocosmos/chaosgraph/swt2d/SWTGraphSimple.java
+---
 
-<br>
-<br>
+## 🖼️ **Gallery**  
 
-## <b> Image of Chart </b>
+### **Area Chart**  
+<img src="./docs/images/AREA.png" width="600" height="400" alt="Area Chart">
 
-## Area chart  
-<img src="./pic/AREA.png" width="600" height="400"/>
-<br>
+---
 
-## Area chart with applying interpolation with with circle peek points  
-<img src="./pic/area_interpolate1.png" width="600" height="400"/>
-<br>
+### **Area Chart with Interpolation**  
+<img src="./docs/images/area_interpolate1.png" width="600" height="400" alt="Area Chart with Interpolation">
 
-## Bar chart  
-<img src="./pic/BAR.png" width="600" height="400"/>
-<br>
+---
 
-## Bar chart with yellow background  
-<img src="./pic/BAR_YELLOW.PNG" width="600" height="400"/>
-<br>
+### **Bar Chart**  
+<img src="./docs/images/BAR.png" width="600" height="400" alt="Bar Chart">
 
-## Bar ratio graph  
-<img src="./pic/BAR_RATIO.png" width="600" height="400"/>
-<br>
+---
 
-## Circle graph  
-<img src="./pic/CIRCLE.png" width="600" height="400"/>
-<br>
+### **Bar Chart with Yellow Background**  
+<img src="./docs/images/BAR_YELLOW.PNG" width="600" height="400" alt="Bar Chart with Yellow Background">
 
-## Line graph  
-<img src="./pic/LINE.png" width="600" height="400"/>
-<br>
+---
 
-## JVM Memory viewer(Movie)
-[JVM_Memory_Viewer.mp4](./pic/JVM_Memory_Viewer.mp4)  
+### **Bar Ratio Graph**  
+<img src="./docs/images/BAR_RATIO.png" width="600" height="400" alt="Bar Ratio Graph">
 
-<br>
+---
 
-## How to be expressed your thinking in this project
+### **Circle Graph**  
+<img src="./docs/images/CIRCLE.png" width="600" height="400" alt="Circle Graph">
 
-If you have any problem when you were using, or encountered to be met something to improve on TCPProxy, Please let us know using Issue tab.  
-Also If you want to join contributing TCPProxy, you just write and send your profile on Issue tab which title is as "Contribution application", So then we will reply result of qualification of contribution through Issue board.
+---
+
+### **Line Graph**  
+<img src="./docs/images/LINE.png" width="600" height="400" alt="Line Graph">
+
+---
+
+### **JVM Memory Viewer (Movie)**  
+[JVM_Memory_Viewer.mp4](./docs/images/JVM_Memory_Viewer.mp4)
+
+---
+
+## 🤝 **Contributing**  
+We welcome contributions!  
+- **Found a bug or have a feature request?** Open an issue.  
+- **Want to contribute?** Submit a pull request or apply via the **Issues** tab with the title "Contribution Application."  
+
+---
+
+## 📜 **License**  
+ChaosGraph is licensed under the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0).  
+
+---
+
+## 📧 **Contact**  
+Developed by **Kooin Shin**  
+- **Email**: chaos930@gmail.com  
+- **GitHub**: [@9ins](https://github.com/9ins)  
+
+---
 

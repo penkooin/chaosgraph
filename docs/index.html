@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="ChaosGraph - A library for creating stunning and interactive charts for AWT, Swing, and SWT components." />
+    <title>ChaosGraph - Interactive Charting Library</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #4CAF50, #2E7D32);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        .section h2 {
+            color: #4CAF50;
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            position: relative;
+        }
+
+        .section h2::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background: #4CAF50;
+            margin: 0.5rem auto;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .gallery img {
+            max-width: 300px;
+            width: 100%;
+            margin: 0.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .features ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .features ul li {
+            display: flex;
+            align-items: center;
+            margin: 1rem 0;
+            font-size: 1.1rem;
+        }
+
+        .features ul li i {
+            color: #4CAF50;
+            margin-right: 0.5rem;
+        }
+
+        pre {
+            background: #eee;
+            padding: 1rem;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: monospace;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>🌌 ChaosGraph</h1>
+        <p>Interactive Charting Library for AWT, Swing, and SWT</p>
+    </header>
+
+    <main class="container">
+        <!-- Introduction -->
+        <section class="section">
+            <h2>📖 Introduction</h2>
+            <p>
+                ChaosGraph is a library designed to create stunning and interactive charts on <strong>AWT</strong>,
+                <strong>Swing</strong>, and
+                <strong>SWT</strong> components.
+                It is perfect for building desktop applications, Eclipse-based tools, or even RAP dashboard web
+                applications.
+                With ChaosGraph, you can deliver an exceptional user experience with interactive and visually appealing
+                charts.
+            </p>
+        </section>
+
+        <!-- Features -->
+        <section class="section features">
+            <h2>🎯 What Can You Build?</h2>
+            <ul>
+                <li><i class="fas fa-chart-bar"></i> Pure Java GUI Applications with AWT/Swing</li>
+                <li><i class="fas fa-chart-line"></i> Dashboard Interfaces for Desktop Tools</li>
+                <li><i class="fas fa-tools"></i> Eclipse RCP Apps like CRMs or MIS systems</li>
+                <li><i class="fas fa-globe"></i> Web Charts with Eclipse RAP</li>
+            </ul>
+        </section>
+
+        <!-- Gallery -->
+        <section class="section">
+            <h2>🖼️ Gallery</h2>
+            <div class="gallery">
+                <img src="./images/AREA.png" alt="Area Chart">
+                <img src="./images/BAR.png" alt="Bar Chart">
+                <img src="./images/BAR_RATIO.png" alt="Bar Ratio Chart">
+                <img src="./images/CIRCLE.png" alt="Circle Chart">
+                <img src="./images/LINE.png" alt="Line Chart">
+                <img src="./images/area_interpolate1.png" alt="Interpolated Area Chart">
+                <img src="./images/BAR_YELLOW.PNG" alt="Yellow Bar Chart">
+            </div>
+        </section>
+
+        <!-- What's New -->
+        <section class="section">
+            <h2>🚀 What's New in v2.0.0?</h2>
+            <h3>✨ New Features</h3>
+            <ul>
+                <li>New Bar Ratio Graph type</li>
+                <li>SWT & RAP native support</li>
+                <li>Interactive data popups</li>
+                <li>Mouse-wheel chart resizing</li>
+                <li>Customizable event listeners</li>
+            </ul>
+            <h3>🔧 Improvements</h3>
+            <ul>
+                <li>Better object-oriented structure</li>
+                <li>Improved graphic rendering</li>
+                <li>Performance-optimized rendering engine</li>
+            </ul>
+        </section>
+
+        <!-- Downloads -->
+        <section class="section">
+            <h2>📥 Download</h2>
+            <p>
+                Latest release: <strong>v2.0.0</strong> (Oct 26, 2020).<br />
+                Download it from the <a href="#releases">Releases</a> section of the GitHub repository.
+            </p>
+
+            <h3>📦 Maven</h3>
+            <pre><code>&lt;dependency&gt;
+    &lt;groupId&gt;io.github.9ins&lt;/groupId&gt;
+    &lt;artifactId&gt;chaosgraph&lt;/artifactId&gt;
+    &lt;version&gt;2.0.0&lt;/version&gt;
+&lt;/dependency&gt;</code></pre>
+
+            <h3>🛠️ Gradle</h3>
+            <pre><code>implementation 'io.github.9ins:chaosgraph:2.0.0'</code></pre>
+        </section>
+
+        <!-- Object Structure -->
+        <section class="section">
+            <h2>🧩 Chart Object Structure</h2>
+            <img src="./images/UMLDiagram1.PNG" alt="UML Diagram of Chart Structure" />
+        </section>
+
+        <!-- Example -->
+        <section class="section">
+            <h2>💻 Example Snippet</h2>
+            <h3><strong>AWTGraphSimple1.java</strong></h3>
+            <ul>
+                <li><strong>Description:</strong> Chart viewer that allows users to select and render chart types.</li>
+                <li><strong>Feature:</strong> Export charts to various image formats.</li>
+                <li><strong>Location:</strong> <code>src/main/java/...</code></li>
+            </ul>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section class="section">
+            <h2>📧 Contact</h2>
+            <p>
+                Developed by <strong>Kooin Shin</strong>.<br>
+                📧 Email: <a href="mailto:chaos930@gmail.com">chaos930@gmail.com</a><br>
+                🐙 GitHub: <a href="https://github.com/9ins" target="_blank">@9ins</a>
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ChaosGraph. View on <a href="https://github.com/9ins/chaosgraph" target="_blank">GitHub</a>.</p>
+    </footer>
+</body>
+
+</html>
