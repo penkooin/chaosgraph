@@ -24,7 +24,6 @@ import org.apache.commons.imaging.ImageFormats;
 import org.apache.commons.imaging.ImageWriteException;
 import org.apache.commons.imaging.Imaging;
 import org.apache.commons.imaging.ImagingConstants;
-import org.chaostocosmos.chaosgraph.GraphUtility.CODEC;
 import org.chaostocosmos.chaosgraph.awt2d.AreaGraph;
 import org.chaostocosmos.chaosgraph.awt2d.BarGraph;
 import org.chaostocosmos.chaosgraph.awt2d.BarRatioGraph;

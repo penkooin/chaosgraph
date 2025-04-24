@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SWTGraphSimple",
+            "request": "launch",
+            "mainClass": "org.chaostocosmos.chaosgraph.swt2d.SWTGraphSimple",
+            "projectName": "chaosgraph"
+        },
+        {
+            "type": "java",
             "name": "GraphUtility",
             "request": "launch",
             "mainClass": "org.chaostocosmos.chaosgraph.GraphUtility",

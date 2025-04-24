@@ -102,8 +102,8 @@ public class GraphPanel<V extends Number, X, Y> extends JPanel {
      * @param g Graphics
      * @since JDK1.4.1
      */
-    public void paintComponent(Graphics g)
-    {
+    @Override
+    public void paintComponent(Graphics g) {
     	super.paintComponent(g);
         this.g2d = (Graphics2D)g;        
         if(this.g2d != null) {

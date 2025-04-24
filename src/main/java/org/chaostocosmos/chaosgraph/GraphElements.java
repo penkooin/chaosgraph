@@ -239,6 +239,7 @@ public class GraphElements <V extends Number, X, Y> implements GraphConstants {
             return last1 > last2 ? 1 : last1 < last2 ? -1 : 0;
         }).map(e -> e.getElementName()).collect(Collectors.toList());
     }    
+
     /**
      * Get graph element map
      * @return
@@ -246,6 +247,7 @@ public class GraphElements <V extends Number, X, Y> implements GraphConstants {
     public Map<Object, GraphElement<V, X, Y>> getGraphElementMap() {
     	return this.elementMap;
     }    
+    
     /**
      * Set graph element map
      * @param elementMap

@@ -38,6 +38,7 @@ import java.util.List;
 * @since JDK1.4.1
 */
 public abstract class AbstractGraph<V extends Number, X, Y> extends Graph<V, X, Y> {
+
     protected Color IMG_BG_COLOR = new Color(230,230,255);		//Color of image object background
     protected Color IMG_BORDER_COLOR = new Color(200,200,230);	//Color of image object border
     protected Color GRAPH_BG_COLOR = new Color(255,255,255);	//Color of graph background 
@@ -129,244 +130,6 @@ public abstract class AbstractGraph<V extends Number, X, Y> extends Graph<V, X, 
             drawTitle(TITLE, FONT_NAME, TITLE_FONT_SIZE, TITLE_FONT_COLOR, g2d);
             drawRight(g2d);
         }
-    }
-    
-    /**
-     * To set image background color
-     * @param color Color 
-     * @since JDK1.4.1
-     */
-    public void setImgBgColor(Color color) {
-        IMG_BG_COLOR = color;
-    }
-    
-    /**
-     * To get image background color
-     * @return
-     */
-    public Color getImgBgColor() {
-    	return IMG_BG_COLOR;
-    }
-    
-    /**
-     * To set image border color
-     * @param color Color
-     * @since JDK1.4.1
-     */
-    public void setImgBorderColor(Color color) {
-        IMG_BORDER_COLOR = color;
-    }
-    
-    /**
-     * To get image border color
-     * @return
-     */
-    public Color getImgBorderColor() {
-    	return IMG_BORDER_COLOR;
-    }
-    
-    /**
-     * To set graph background color
-     * @param color Color Color
-     * @since JDK1.4.1
-     */
-    public void setGraphBgColor(Color color) {
-        GRAPH_BG_COLOR = color;
-    }
-    
-    /**
-     * To get graph background color
-     * @return
-     */
-    public Color getGraphBgColor() {
-    	return GRAPH_BG_COLOR;
-    }
-    
-    /**
-     * To set graph border color
-     * @param color Color
-     * @since JDK1.4.1
-     */
-    public void setGraphBorderColor(Color color) {
-        GRAPH_BORDER_COLOR = color;
-    }
-    
-    /**
-     * To get graph border color
-     * @return
-     */
-    public Color getGraphBorderColor() {
-    	return GRAPH_BORDER_COLOR;
-    }
-    
-    /**
-     * To set border color
-     * @param color Color Color
-     * @since JDK1.4.1
-     */
-    public void setBorderColor(Color color) {
-        BORDER_COLOR = color;
-    }
-    
-    /**
-     * To set default border color
-     * @return
-     */
-    public Color getBorderColor() {
-    	return BORDER_COLOR;
-    }
-    
-    /**
-     * To set label background color
-     * @param color Color Color객체
-     * @since JDK1.4.1
-     */
-    public void setLabelBgColor(Color color) {
-        LABEL_BG_COLOR = color;
-    }
-    
-    /**
-     * To get graph label backgraound color
-     * @return
-     */
-    public Color getLabelBgColor() {
-    	return LABEL_BG_COLOR;
-    }
-    
-    /**
-     * To set title font color
-     * @param color Color Color
-     * @since JDK1.4.1
-     */
-    public void setTitleFontColor(Color color) {
-        TITLE_FONT_COLOR = color;
-    }
-    
-    /**
-     * To get title font color
-     * @return
-     */
-    public Color getTitleFontColor() {
-    	return TITLE_FONT_COLOR;
-    }
-    
-    /**
-     * To set indexes font color
-     * @param color Color Color
-     * @since JDK1.4.1
-     */
-    public void setIndexFontColor(Color color) {
-        INDEX_FONT_COLOR = color;
-    }
-    
-    /**
-     * To get indexes font color
-     * @return
-     */
-    public Color getIndexFontColor() {
-    	return INDEX_FONT_COLOR;
-    }
-    
-    /**
-     * To set graph x, y axis color
-     * @param color Color Color
-     * @since JDK1.4.1
-     */
-    public void setGraphXYColor(Color color) {
-        GRAPH_XY_COLOR = color;
-    }
-    
-    /**
-     * To get graph XY axis color
-     * @return
-     */
-    public Color getGraphXYColor() {
-    	return GRAPH_XY_COLOR;
-    }
-    
-    /**
-     * To set grid x axis color
-     * @param color Color Color
-     * @since JDK1.4.1
-     */
-    public void setGridXColor(Color color) {        
-    	GRID_X_COLOR = color;
-    }
-    
-    /**
-     * To get grid X axis color
-     * @return
-     */
-    public Color getGirdXColor() {
-    	return GRID_X_COLOR;
-    }
-    
-    /**
-     * To set grid y color
-     * @param color Color Color
-     * @since JDK1.4.1
-     */
-    public void setGridYColor(Color color) {
-        GRID_Y_COLOR = color;
-    }
-    
-    /**
-     * To get grid Y axis color
-     * @return
-     */
-    public Color getGridYColor() {
-    	return GRID_Y_COLOR;
-    }
-    
-    /**
-     * To set shadow color
-     * @param color Color Color
-     * @since JDK1.4.1
-     */
-    public void setShadowColor(Color color) {
-        SHADOW_COLOR = color;
-    }
-    
-    /**
-     * To get shadow color
-     * @return
-     */
-    public Color getShadowColor() {
-    	return SHADOW_COLOR;
-    }
-    
-    /**
-     * To set default color
-     * @param color Color
-     * @see java.awt.Color
-     * @since JDK1.4.1
-     */
-    public void setDefaultColor(Color color) {
-        DEFAULT_COLOR = color;
-    }
-    
-    /**
-     * To get default color
-     * @return
-     */
-    public Color getDefaultColor() {
-    	return DEFAULT_COLOR;
-    }
-    
-    /**
-     * Set peek point color
-     * @param color
-     */
-    public void setPeekColor(Color color) {
-    	PEEK_COLOR = color;
-    }
-    
-    /**
-     * To get peek point color
-     * @return
-     */
-    public Color getPeekColor() {
-    	return PEEK_COLOR;
     }
     
     /**
@@ -939,4 +702,242 @@ public abstract class AbstractGraph<V extends Number, X, Y> extends Graph<V, X, 
     	resizeImage((Graphics2D)buffImg.getGraphics(), width, height);
     	return buffImg;
     }
+
+    /**
+     * To set image background color
+     * @param color Color 
+     * @since JDK1.4.1
+     */
+    public void setImgBgColor(Color color) {
+        IMG_BG_COLOR = color;
+    }
+    
+    /**
+     * To get image background color
+     * @return
+     */
+    public Color getImgBgColor() {
+    	return IMG_BG_COLOR;
+    }
+    
+    /**
+     * To set image border color
+     * @param color Color
+     * @since JDK1.4.1
+     */
+    public void setImgBorderColor(Color color) {
+        IMG_BORDER_COLOR = color;
+    }
+    
+    /**
+     * To get image border color
+     * @return
+     */
+    public Color getImgBorderColor() {
+    	return IMG_BORDER_COLOR;
+    }
+    
+    /**
+     * To set graph background color
+     * @param color Color Color
+     * @since JDK1.4.1
+     */
+    public void setGraphBgColor(Color color) {
+        GRAPH_BG_COLOR = color;
+    }
+    
+    /**
+     * To get graph background color
+     * @return
+     */
+    public Color getGraphBgColor() {
+    	return GRAPH_BG_COLOR;
+    }
+    
+    /**
+     * To set graph border color
+     * @param color Color
+     * @since JDK1.4.1
+     */
+    public void setGraphBorderColor(Color color) {
+        GRAPH_BORDER_COLOR = color;
+    }
+    
+    /**
+     * To get graph border color
+     * @return
+     */
+    public Color getGraphBorderColor() {
+    	return GRAPH_BORDER_COLOR;
+    }
+    
+    /**
+     * To set border color
+     * @param color Color Color
+     * @since JDK1.4.1
+     */
+    public void setBorderColor(Color color) {
+        BORDER_COLOR = color;
+    }
+    
+    /**
+     * To set default border color
+     * @return
+     */
+    public Color getBorderColor() {
+    	return BORDER_COLOR;
+    }
+    
+    /**
+     * To set label background color
+     * @param color Color Color객체
+     * @since JDK1.4.1
+     */
+    public void setLabelBgColor(Color color) {
+        LABEL_BG_COLOR = color;
+    }
+    
+    /**
+     * To get graph label backgraound color
+     * @return
+     */
+    public Color getLabelBgColor() {
+    	return LABEL_BG_COLOR;
+    }
+    
+    /**
+     * To set title font color
+     * @param color Color Color
+     * @since JDK1.4.1
+     */
+    public void setTitleFontColor(Color color) {
+        TITLE_FONT_COLOR = color;
+    }
+    
+    /**
+     * To get title font color
+     * @return
+     */
+    public Color getTitleFontColor() {
+    	return TITLE_FONT_COLOR;
+    }
+    
+    /**
+     * To set indexes font color
+     * @param color Color Color
+     * @since JDK1.4.1
+     */
+    public void setIndexFontColor(Color color) {
+        INDEX_FONT_COLOR = color;
+    }
+    
+    /**
+     * To get indexes font color
+     * @return
+     */
+    public Color getIndexFontColor() {
+    	return INDEX_FONT_COLOR;
+    }
+    
+    /**
+     * To set graph x, y axis color
+     * @param color Color Color
+     * @since JDK1.4.1
+     */
+    public void setGraphXYColor(Color color) {
+        GRAPH_XY_COLOR = color;
+    }
+    
+    /**
+     * To get graph XY axis color
+     * @return
+     */
+    public Color getGraphXYColor() {
+    	return GRAPH_XY_COLOR;
+    }
+    
+    /**
+     * To set grid x axis color
+     * @param color Color Color
+     * @since JDK1.4.1
+     */
+    public void setGridXColor(Color color) {        
+    	GRID_X_COLOR = color;
+    }
+    
+    /**
+     * To get grid X axis color
+     * @return
+     */
+    public Color getGirdXColor() {
+    	return GRID_X_COLOR;
+    }
+    
+    /**
+     * To set grid y color
+     * @param color Color Color
+     * @since JDK1.4.1
+     */
+    public void setGridYColor(Color color) {
+        GRID_Y_COLOR = color;
+    }
+    
+    /**
+     * To get grid Y axis color
+     * @return
+     */
+    public Color getGridYColor() {
+    	return GRID_Y_COLOR;
+    }
+    
+    /**
+     * To set shadow color
+     * @param color Color Color
+     * @since JDK1.4.1
+     */
+    public void setShadowColor(Color color) {
+        SHADOW_COLOR = color;
+    }
+    
+    /**
+     * To get shadow color
+     * @return
+     */
+    public Color getShadowColor() {
+    	return SHADOW_COLOR;
+    }
+    
+    /**
+     * To set default color
+     * @param color Color
+     * @see java.awt.Color
+     * @since JDK1.4.1
+     */
+    public void setDefaultColor(Color color) {
+        DEFAULT_COLOR = color;
+    }
+    
+    /**
+     * To get default color
+     * @return
+     */
+    public Color getDefaultColor() {
+    	return DEFAULT_COLOR;
+    }
+    
+    /**
+     * Set peek point color
+     * @param color
+     */
+    public void setPeekColor(Color color) {
+    	PEEK_COLOR = color;
+    }
+    
+    /**
+     * To get peek point color
+     * @return
+     */
+    public Color getPeekColor() {
+    	return PEEK_COLOR;
+    }        
 }

@@ -12,8 +12,7 @@ package org.chaostocosmos.chaosgraph;
 * @version 1.0, 2001/8/13 19:30 First draft
 * @version 1.2, 2006/7/5
 */
-public class NotMatchElementException extends RuntimeException
-{
+public class NotMatchElementException extends RuntimeException {
     /**
      * Error message
      * @since JDK1.4.1

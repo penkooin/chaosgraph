@@ -86,7 +86,8 @@ public class CircleGraph<V extends Number, X, Y> extends AbstractGraph<V, X, Y>
      */
     @Override
     public void drawGraph(Graphics2D g2d) {
-        super.drawGraph(g2d);        
+        super.drawGraph(g2d);     
+           
         Map<Object, GraphElement<V, X, Y>> elementMap = GRAPH_ELEMENTS.getGraphElementMap();
         List<Object> elements = elementMap.keySet().stream().collect(Collectors.toList());
         List<X> xIndex = GRAPH_ELEMENTS.getXIndex();        

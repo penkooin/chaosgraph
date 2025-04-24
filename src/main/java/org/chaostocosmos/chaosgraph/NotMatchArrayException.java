@@ -12,8 +12,7 @@ package org.chaostocosmos.chaosgraph;
 * @version 1.0, 2001/8/13 19:30 First draft
 * @version 1.2, 2006/7/5
 */
-public class NotMatchArrayException extends Exception
-{
+public class NotMatchArrayException extends Exception {
     /**
      * Error text
      * @since JDK1.4.1
@@ -29,7 +28,7 @@ public class NotMatchArrayException extends Exception
     }
     /**
      * Constructor
-     * @param str String �޽���
+     * @param str String 
      * @since JDK1.4.1
      */
     public NotMatchArrayException(String str)

@@ -199,6 +199,48 @@ public abstract class Graph <V extends Number, X, Y> implements IGraph<V, X, Y>,
     		this.repaint(this.GRAPHICS2D);
     	}
     }
+
+    /**
+     * To set color to graphics 2d object
+     * @param color Color
+     * @param graphics Graphics2D
+     * @since JDK1.4.1
+     */
+    protected void color(Color color, Graphics2D graphics) {
+        graphics.setColor(color);
+    }
+    
+    /** 
+     * To set color to graphics object with density
+     * @param color
+     * @param density
+     * @param graphics
+     */
+    protected void color(Color color, int density, Graphics2D graphics) {
+    	int r = color.getRed()+density;
+    	int g = color.getGreen()+density;
+    	int b = color.getBlue()+density;
+    	r = r > 255 ? 255 : r < 0 ? 0 : r;
+    	g = g > 255 ? 255 : g < 0 ? 0 : g;
+    	b = b > 255 ? 255 : b < 0 ? 0 : b;
+    	color = new Color(r, g, b);
+    	graphics.setColor(color);
+    }
+    
+    /**
+     * Get contrast color
+     * @param color
+     * @return
+     */
+    protected Color getContrastColor(Color color) {
+        int r = (int)(255 - color.getRed());
+        int g = (int)(255 - color.getGreen());
+        int b = (int)(255 - color.getBlue());
+        r = r > 255 ? 255 : r;
+        g = g > 255 ? 255 : g;
+        b = b > 255 ? 255 : b;
+        return new Color(r, g, b);
+    }
     
     /**
      * Set interpolate type to be set to graph elements
